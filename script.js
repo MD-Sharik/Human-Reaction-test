@@ -7,7 +7,7 @@ let reactionTime;
 function blue() {
   if (color) {
     endTime = new Date();
-    reactionTime = endTime - startTime;
+    reactionTime = endTime - startTime - 50;
     main.style.backgroundColor = "rgb(24, 147, 248)";
     main.innerText = reactionTime + " ms " + "⚡";
     main.removeEventListener("click", blue);
@@ -25,4 +25,4 @@ function blue() {
   }
 }
 
-main.addEventListener("click", blue);
+main.addEventListener("mousedown", blue);
