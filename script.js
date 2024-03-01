@@ -18,7 +18,6 @@ function blue() {
 
     setTimeout(() => {
       main.style.backgroundColor = "Green";
-      main.innerText = "click";
       startTime = new Date();
     }, Math.random() * 3000 + 1000);
     clearTimeout();
